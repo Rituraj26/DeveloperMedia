@@ -1,5 +1,8 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
+import { setAlert } from "../../actions/alert";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -54,4 +57,6 @@ const Login = () => {
   );
 };
 
-export default Login;
+Login.propTypes = { setAlert: PropTypes.func.isRequired };
+
+export default connect(null, { setAlert })(Login);
