@@ -10,6 +10,7 @@ import Navbar from "./components/layout/Navbar";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import Dashboard from "./components/dashboard/Dashboard";
+// import Profiles from "./components/profiles";
 import store from "./store";
 
 import "./App.css";
